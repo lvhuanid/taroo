@@ -1,0 +1,13 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "my_taroo",
+  "description": "about my first app",
+  "appid": "touristappid",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram"
+}
