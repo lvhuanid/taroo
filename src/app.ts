@@ -3,10 +3,11 @@ import "./app.scss";
 
 class App extends Component<PropsWithChildren> {
   componentDidMount() {
-    console.log("hello");
   }
 
-  componentDidShow () {}
+  componentDidShow () {
+
+  }
 
   componentDidHide () {}
 

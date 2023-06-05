@@ -12,13 +12,13 @@ const Index = () => {
     title: "Taro Hooks!",
     showCancel: false,
     confirmColor: "#8c2de9",
-    confirmText: "支持一下",
+    confirmText: "one",
     mask: true,
   });
   const [showToast] = useToast({ mask: true });
 
   const handleModal = useCallback(() => {
-    show({ content: "不如给一个star⭐️!" }).then(() => {
+    show({ content: "update!" }).then(() => {
       showToast({ title: "点击了支持!" });
     });
   }, [show, showToast]);
@@ -26,19 +26,15 @@ const Index = () => {
   return (
     <View className='wrapper'>
       <Image className='logo' src={logo} />
-      <Text className='title'>为Taro而设计的Hooks Library</Text>
-      <Text className='desc'>
-        hello huan
-      </Text>
       <View className='list'>
         <Text className='label'>运行环境</Text>
         <Text className='note'>{env}</Text>
       </View>
       <Button className='button' onClick={() => setTitle("Taro Hooks Nice!")}>
-        设置标题
+       test
       </Button>
       <Button className='button' onClick={handleModal}>
-        使用Modal
+       test2
       </Button>
     </View>
   );
